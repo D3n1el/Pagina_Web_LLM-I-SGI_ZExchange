@@ -1,0 +1,120 @@
+*{ /*Define el estilo de fuente predetemrinado en todo el documento html*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header { /*Define la posicion y la ruta de la foto de fondo de la cabezera*/
+    background-image: url(media/HEADERFOTO.png); /*Selecciona la ruta de la imagen y la muestra en el html*/
+    background-size: cover;
+    margin: -5%;
+    padding-bottom: 20%;
+}
+#h { /*Da estilo al contenedor referente a la foto, la frase y los enlaces de la cabezera. Centra el texto, así como añadir unos márgenes.*/
+    display: block;
+    text-align: center; /*Centra el texto*/
+    padding:6% 
+}
+#HeaderLinks { /*Colorea de verde los enlaces debajo de la imagen de la cabezera*/
+    color:rgb(21, 255, 0);
+}
+#HeaderLinks:hover { /*Al pasar el cursor por encima de los enlaces de la cabezera, estos cambian de color a blanco.*/
+    color:rgb(255, 255, 255)
+}
+#subtitle{ /*Define el estilo de la frase que aparece en la cabezera, inferior a los enlaces.*/
+    color:aliceblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; /*Define la fuente*/
+    font-weight: bold; /*Resalta el texto*/
+    font-size: 30px; /*Define el tamaño*/
+}
+.content_body{ /*define los espaciados laterales entre el borde exterior y los elementos*/
+    padding:6%
+}
+.photo { /*Define la disposición y posición de las imágenes*/
+    display: flex; 
+    justify-content:center;
+}
+#p { /*Se utiliza en las imágenes que definen programación. Al hacer la página más estrecha, desplaza uan de las imágenes a la línea siguiente. Permite volver esta parte responsive.*/
+    flex-wrap: wrap;
+}
+.img { /*En las imagenes que definen programación, añade un espaciado entre una y la otra.*/
+    padding:1%;
+}
+h2 { /*Define el título de las definiciones principales*/
+    color:rgb(95, 95, 255);
+}
+h3 { /*Define el título de las definiciones de los lenguajes de programación*/
+    color:rgb(35, 211, 0); 
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 25px
+}
+.Container { /*Permite dar estilo a las definiciones de leguajes, de forma que, aparezca una imagen a la izquierda, y la definicion a la derecha.*/
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+#J { /*Colorea el fondo de la definción de Java*/
+    background-color: bisque;
+}
+#C { /*Colorea el fondo de la definción de C*/
+    background-color: rgb(209, 212, 255);
+}
+#JS { /*Colorea el fondo de la definción de JavaScript*/
+    background-color: rgb(254, 255, 183);
+} 
+#R { /*Colorea el fondo de la definción de Ruby*/
+    background-color: rgb(255, 196, 196);
+} 
+#P { /*Colorea el fondo de la definción de Python*/
+    background-color: rgb(230, 230, 230);
+}
+#PHP { /*Colorea el fondo de la definción de PHP*/
+    background-color: rgb(227, 185, 255);
+}
+#SQL { /*Colorea el fondo de la definción de SQL*/
+    background-color:rgb(221, 253, 221);
+}
+#A { /*Añade margenes y ancho las imagenes de las definiciones de lenguajes*/
+    margin:5px; 
+    width: 30%; 
+}
+#B { /*Dfine márgenes y alinea el texto justificandolo*/
+    width: 70%;
+    text-align:justify;
+    padding-right: 3%;
+}
+footer { /*Define el pie de página sobre el color del fondo, el color de las letras, la fuente del nombre de la empresa y los márgenes.*/
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold; /*Resalta el texto*/
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(66, 66, 66);
+    color:aliceblue;
+    margin-right: -5%;
+    margin-left: -5%;
+    margin-bottom: -5%;
+    padding:3%;
+}
+@media (max-width: 768px) { /*Permite hacer el html responsive*/
+    * { /*Cambia el tamaño del texto general*/
+        font-size:15px
+    }
+    h2 { /*Cambia el tamaño de los titulos principales*/
+        font-size: 21px;
+    }
+
+    h3 { /*Cambia el tamaño de los titulos de cada lenguaje de progaramción*/
+        font-size: 19px;
+    }
+
+    img{ /*Modifica el ancho en las imagenes de explicaciones de los lenguajes*/
+        width: 75%;
+    }
+
+    #B { /*Modifica el ancho de los texto de las definiciones de lenguajes*/
+        width:90%;
+    }
+    .content_body{ /*Reduce los márgenes del contenido del cuerpo*/
+        padding:1%
+    }
+}
+

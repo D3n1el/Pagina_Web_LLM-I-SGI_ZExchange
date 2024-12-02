@@ -1,0 +1,61 @@
+*{ /*Define el estilo de fuente predetemrinado en todo el documento html*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header { /*Define la posicion y la ruta de la foto de fondo de la cabecera*/
+    background-image: url(media/HEADERFOTO.png); /*Selecciona la ruta de la imagen y la muestra en el html*/
+    background-size: cover;
+    margin: -5%;
+    margin-bottom: 0%;
+}
+#h {
+    display: block;
+    text-align: center;
+    padding:6%
+}
+#HeaderLinks { /*Colorea de verde los enlaces debajo de la imagen de la cabecera*/
+    color:rgb(21, 255, 0);
+}
+#HeaderLinks:hover { /*Al pasar el cursor por encima de los enlaces de la cabezera, estos cambian de color a blanco.*/
+    color:rgb(255, 255, 255)
+}
+.container { /*Define el color del fondo del contenedor dodne está el título del contenido y la tabla. */
+    background-color: bisque;
+    padding:2%;
+}
+h2 { /*Colorea en verde el título.*/
+    color:rgb(95, 95, 255);
+}
+table { /*Da estilo a la tabla.*/
+    background-color: aliceblue; /*Define el color de la tabla*/
+    border-spacing:3px; /*Define el espaciado entre celdas*/
+    padding:0.5%; /*Define el grosor del borde exterior de la tabla*/
+    width:200%; /*Define el ancho total de la tabla*/
+    border:"1px black";
+    border:1px solid black; /*Añade bordes a los límites de la tabla*/
+}
+#A, #B { /*Centra el título y la tabla*/
+    display: flex; /*Al hacer ambos elementos flexibles con esta propiedad, permite centrar el texto y la tabla.*/
+    justify-content: center;
+}
+th, td { /*Añade bordes y espaciados en las celdas*/
+    border:1px solid black;
+    padding: 6px;
+}
+footer {  /*Define el pie de pagina*/
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold; /*Resalta el texto*/
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(66, 66, 66);
+    color:aliceblue;
+    margin-right: -5%;
+    margin-left: -5%;
+    margin-bottom: -5%;
+    padding:3%;
+}
+@media (max-width: 480px) {  /*Permite que el html sea responsive*/
+    td {
+        width: 50%; /*Modifica la anchura de las celdas*/
+        font-size: 15px;  /*Modifica el tamaño de texto de las celdas.*/
+    }
+}

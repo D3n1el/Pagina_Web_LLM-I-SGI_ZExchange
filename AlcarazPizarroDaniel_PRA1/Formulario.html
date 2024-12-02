@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="EstilosFormulario.css"> <!-- Línea de código que sirve para indicar la ruta al archivo css, que sirve para añadir estilos a la página. -->
+    <link rel="shortcut icon" href="media/LOGO2.png"> <!-- Muestra el logo en la pestaña de la página -->
+    <title>Formulario de registro</title>
+</head>
+<body> <!-- Da formato al cuerpo -->
+    <header> <!-- Da formato a la cabecera -->
+        <container id="h"> <!-- Contenedor que incluye todos los elementos de la cabecera, excepto el texto entre comillas. El id sirve para añadir estilos en el css, que utilizen, en este caso, "h" como referencia-->
+            <a href="Inicio.html"> <!-- Este enlace está dentro del logo, y redirecciona a la página de inicio. -->
+                <h1><img SRC="media/LOGO.png" width="150"></h1>
+            </a>
+            <a href="Inicio.html" id="HeaderLinks">Inicio</a> &nbsp;&nbsp;&nbsp; <!-- Enlace que redirecciona a la página de inicio -->
+            <a href="Usuarios.html" id="HeaderLinks">Usuarios</a> &nbsp;&nbsp;&nbsp; <!-- Enlace que redirecciona a la página de usuarios -->
+            <a href="Formulario.html" id="HeaderLinks">Formulario de registro</a> <!-- Enlace que redirecciona a la página de formaularios -->
+        </container>
+    </header>
+    <br>
+    <h2>FORMULARIO DE REGISTRO</h2>
+    <container>
+        <form>
+            <div class = "Container" id="P"> <!-- Contenedor donde se sitúan los nombres y los campos rellenables. -->
+                <div id = "A"> <!-- Define el texto -->
+                    <ul>
+                        <ol>Nombre de usuario</ol> <br>
+                        <ol>Contraseña</ol> <br>
+                        <ol>Nombre y apellidos</ol> <br>
+                        <ol>Correo electrónico</ol> <br>
+                        <ol>Descripción breve 
+                            <br><br><br><br><br><br><br><br>
+                    </ul>
+                </div>
+                <div id = "B"> <!-- Define los campos. Todos ellos tienen validaciones para deba haber contenido en cada uno antes de enviar el formulario. -->
+                    <ul>
+                        <input type="text" size="36" id="A" required> <br> <br> <!-- Define el campo para introducir un nombre de usuario. -->
+                        <input type="password" size="36" id="A" required minlength="7" placeholder="Pon carácteres especiales (+!*&...)" data-parsley-pattern="(?=.*[!@#$%^&*])(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}"> <br> <br> <!-- Define el capo de cotnraseña, con un mínimo de carácteres y uno especial a introducir, y una validación que obliga a que cumpla la condición anteriormente nombrada. -->
+                        <input type="text" size="36" placeholder="Nombre" id="A" required> <!-- Define el campo de nombre -->
+                        <input type="text" size="36" placeholder="Apellidos" id="A" required> <br> <br> <!-- Define el campo de apellidos -->
+                        <input type="email" size="36" id="A" placeholder="name@example.com" required> <br> <br> <!-- Define el campo de correo electrónico. También, hay una validación que obliga a implementar el formato de email. -->
+                        <textarea rows="7" cols="34" id="A" required> </textarea> <br> <br> <!-- Define el campo para introducir una descripción. -->
+                        <input type="Submit" id="F"> <!-- Define el botón para enviar el formulario -->
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </container>
+</body>
+<br>
+<footer> <!-- Define y da formato al footer -->
+    Z_EXCHANGE bootcamp 
+    <br><br> &nbsp;
+    <a href="https://www.instagram.com/" target="blank"> <!-- La imagen de Instagram, la cual contene un enlace. -->
+        <img src="media/instagram.png" width="25">
+    </a>&nbsp;
+    <a href="https://es.linkedin.com/" target="blank"> <!-- La imagen de LinkedIn, la cual contene un enlace. -->
+        <img src="media/linkedin.png" width="25">
+    </a>&nbsp;
+    <a href="https://www.facebook.com/?locale=es_ES" target="blank"> <!-- La imagen de Facebook, la cual contene un enlace. -->
+        <img src="media/facebook.png" width="25">
+    </a>&nbsp;
+    <a href="https://x.com/?lang=es" target="blank"> <!-- La imagen de X, la cual contene un enlace. -->
+        <img src="media/x.png" width="25">
+    </a>&nbsp;
+    <a href="https://www.youtube.com/" target="blank"> <!-- La imagen de Youtube, la cual contene un enlace. -->
+        <img src="media/youtube.png" width="25">
+    </a>&nbsp;
+</footer>
+</html>

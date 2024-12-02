@@ -1,0 +1,28 @@
+header {
+    display: block;
+    background-color:rgb(139, 137, 255);
+    text-align: center;
+    padding:5%
+    
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+#HeaderLinks {
+    color:azure;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#HeaderLinks:hover {
+    color:blue
+}
+.photo {
+    display: flex;
+    justify-content:center;
+}
+h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:blue;
+}
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
